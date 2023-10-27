@@ -1,0 +1,92 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    color: rgb(0, 109, 109);
+}
+
+.content {
+    border: 10px solid rgb(0, 0, 0);
+    width: 1024px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgb(0,107,177);
+    background: linear-gradient(0deg, rgba(0,107,177,1) 37%, rgba(166,240,255,1) 100%);
+    border-radius: 5%;
+}
+
+.pfp{
+    background-image: url(https://yt3.googleusercontent.com/uMUat6yJL2_Sk6Wg2-yn0fSIqUr_D6aKVNVoWbgeZ8N-edT5QJAusk4PI8nmPgT_DxFDTyl8=s900-c-k-c0x00ffffff-no-rj);
+    width: 192px;
+    height: 192px;
+    position: relative;
+    margin-top: 70px;
+    border-radius: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.notif{
+    background-color: red;
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    border-radius: 100%;
+    right: 0;
+    bottom: 0;
+    display: grid;
+    place-items: center;
+}
+
+.avatar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.input_group{
+    display: grid;
+    place-items: center;
+    gap: 10px;
+    column-gap: 10px;
+}
+
+.gallery {
+    display: grid;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(4, 300px);
+    gap: 25px;
+}
+
+.galleryitem{
+    background: aquamarine;
+    background-size: cover;
+    background-position: center;
+    border: 5px solid white;
+    border-radius: 5%;
+}
+
+.col-span{
+    grid-column: span 2 / span 2;
+}
+
+.row-span{
+    grid-row: span 2 / span 2;
+}
+
+.on-hover {
+    text-decoration: none;
+    color: black;
+}
+
+.on-hover:hover {
+    text-decoration: none;
+    color: red;
+}

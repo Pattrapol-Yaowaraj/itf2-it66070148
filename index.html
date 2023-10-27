@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>66070148</title>
+        <link rel="stylesheet" href="styles.css">
+        <script>
+            function set_username(){
+                document.getElementById("username-p").innerHTML = document.getElementById("username").value + "'s Gallery";
+            }
+            function set_pfp(){
+                document.getElementById("pfp").style.backgroundImage = "url("+document.getElementById("profilepic").value + ")"; //url(*Link to your image*)
+            }
+        </script>
+    </head>
+    <body>
+        <div class="content">
+            <div class="avatar">
+                <div class="pfp" id="pfp"></div>
+                <div class="notif">6</div>
+            </div>
+            <div class="username">
+                <p style="font-size: x-large; font-weight: 600;" id="username-p"><a href="https://www.youtube.com/watch?v=zEQp_WeBh-E" class="on-hover">Patty's Gallery</a></p>
+            </div>
+            <div class="input_group">
+                <div>
+                    <label style="font-weight: 500;">Username</label>
+                    <input type="text" id="username" style="margin-left: 10px;">
+                    <button id="set_username" onclick="set_username()">Apply</button>
+                </div>
+                <div>
+                    <label style="font-weight: 500;">Profile Image</label>
+                    <input type="text" id="profilepic" style="margin-left: 10px;">
+                    <button id="set_pfp" onclick="set_pfp()">Apply</button>
+                </div>
+            </div>
+            <div class="gallery">
+                <div class="galleryitem col-span" style="background-image: url(images/4.webp);"></div>
+                <div class="galleryitem" style="background-image: url(images/2.jpg);"></div>
+                <div class="galleryitem" style="background-image: url(images/3.jpg);"></div>
+                <div class="galleryitem col-span" style="background-image: url(images/9.jpg);"></div>
+                <div class="galleryitem row-span" style="background-image: url(images/1.jpg);"></div>
+                <div class="galleryitem" style="background-image: url(images/5.png);"></div>
+                <div class="galleryitem" style="background-image: url(images/6.jpg);"></div>
+                <div class="galleryitem" style="background-image: url(images/7.jpg);"></div>
+                <div class="galleryitem" style="background-image: url(images/8.jpg);"></div>
+            </div>
+        </div>
+    </body>
+</html>
