@@ -41,6 +41,8 @@ h1 {
     bottom: 0;
     display: grid;
     place-items: center;
+    font-weight: 800;
+    color: aliceblue;
 }
 
 .avatar{
@@ -87,6 +89,6 @@ h1 {
 }
 
 .on-hover:hover {
-    text-decoration: none;
-    color: red;
+    text-decoration: underline;
+    color: rgb(0, 89, 255);
 }
